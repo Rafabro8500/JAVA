@@ -20,6 +20,9 @@ public class Compi {
         System.out.println("No sirve");
         
         System.out.println("Que hambre");
+        
+         System.out.println("Adios mundo cruel");
+        
     }
     
 }
