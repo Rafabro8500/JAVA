@@ -1,0 +1,10 @@
+let
+ var i: Integer;
+ var j: Integer;
+ var k: Integer;
+ var num: Integer
+in 
+end;
+
+loop while (i < 0) do 
+nothing end;
