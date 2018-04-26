@@ -801,7 +801,10 @@ public class Parser {
         declarationAST = parseDeclaration();
         accept(Token.IN);
         Declaration d2AST = parseDeclaration();
+        accept(Token.END);
+        finish(declarationPos);
         declarationAST = new SequentialDeclaration(declarationAST, d2AST,
+                
         declarationPos);
     }
     else if(currentToken.kind == Token.CONST || currentToken.kind == Token.VAR || currentToken.kind == Token.TYPE || 
