@@ -454,13 +454,17 @@ public class Parser {
       }
       break;*/
 
-    case Token.NOTHING:    
+    case Token.NOTHING:
+
+      finish(commandPos);
+      commandAST = new EmptyCommand(commandPos);
+      break;
+    
+    
     case Token.SEMICOLON:
     case Token.END:
     case Token.ELSE:
-    case Token.IN:
-    
-     
+    case Token.IN:  
         
         
     case Token.EOT:
